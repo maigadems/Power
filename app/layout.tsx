@@ -21,11 +21,26 @@ export const metadata: Metadata = {
     "api",
     "transformation digitale",
   ],
+  generator: "v0.app",
   icons: {
-    shortcut: "/favicon.ico", // favicon standard
-    icon: "/favicon.ico",     // favicon moderne
-    apple: "/favicon.ico",    // pour iOS
+    icon: [
+      {
+        url: "/favicon.ico",
+        media: "(prefers-color-scheme: light)",
+      },
+      {
+        url: "/favicon.ico",
+        media: "(prefers-color-scheme: dark)",
+      },
+      {
+        url: "/favicon.ico",
+        type: "image/svg+xml",
+      },
+    ],
+    apple: "/favicon.ico",
+    shortcut: "/favicon.ico",
   },
+  
 }
 
 
